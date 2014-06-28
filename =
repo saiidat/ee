@@ -1,0 +1,2 @@
+ERROR: "bundle show" was called with arguments ["paperclip-dropbox", "1.1.7"]
+Usage: "bundle show GEM [OPTIONS]"

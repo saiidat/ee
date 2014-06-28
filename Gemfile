@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.1'
 # Use sqlite3 as the database for Active Record
 group :development, :test do 
-	gem 'pg'
+	gem 'sqlite3'
 end 
 
 # Use SCSS for stylesheets
@@ -27,6 +27,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc do
 end 
 
+gem "paperclip-dropbox", ">= 1.1.7"
+gem 'figaro'
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',       
 
