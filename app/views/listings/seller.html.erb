@@ -4,7 +4,7 @@
     <th class="center">Name</th>
     <th class="center">Description</th>
     <th class="center">Price</th>
-    <th class="center">Action</th>
+    <th class="center">Manage Listing</th>
   </tr>
 
   <% @listings.each do |listing| %>
@@ -14,17 +14,14 @@
       <td><%= listing.description %></td>
       <td><%= number_to_currency(listing.price) %></td>
       <td>
-         <div class="btn-group">
+           <div class="btn-group">
           <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-            Action <span class="caret"></span>
+            Options <span class="caret"></span>
           </button>
           <ul class="dropdown-menu" role="menu">
         <%= link_to "View", listing, class: "btn btn-link" %>
         <%= link_to "Edit", edit_listing_path(listing), class: "btn btn-link" %>
         <%= link_to 'Destroy', listing, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-link" %>
-</li>
-    </ul>
-  </div>
       </td>
     </tr>
   <% end %>
